@@ -1,0 +1,17 @@
+FUNC {
+	returnType: type,
+	FuncName: string,
+	Input: (types, ...),
+	THREAD: [THREAD_DEPTH, pid],
+	Body: {}
+}
+
+DIRECT_FUNC {
+	returnType: type,
+	FuncName: string,
+	InputPointer: =>,
+	Input: (types, ...),
+	THREAD: [THREAD_DEPTH, pid],
+	BodyPointer: ->,
+	Body: {}
+}

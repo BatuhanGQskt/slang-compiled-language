@@ -127,7 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="file_handler\File_handler.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tokenizer\OperatorTokenizer.cpp" />
+    <ClCompile Include="Tokenizer\Tokenizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file_handler\file_handler.hpp" />
+    <ClInclude Include="Tokenizer\OperatorTokenizer.h" />
+    <ClInclude Include="Tokenizer\Tokenizer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Tokenizer\rules.slgr" />
+    <Text Include="Tokenizer\Tokens.slgtk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="run_slang\holder.slg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

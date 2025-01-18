@@ -1,0 +1,25 @@
+!!include>ioslang;
+
+!!inclusivy>"./fibo.slg";
+
+
+int add(int a, b, f64 bias)[THREAD_DEPTH, pid] {
+	return (a+b)*bias;
+}
+
+Integer add => (a, b: int, bias: f64)[THREAD_DEPTH, pid] -> (bias*(a+b));
+
+
+Result slang(int arg, char* argv)[THREAD_DEPTH, pid] {
+	pout "Hello world";
+	f64 bias = f64(8);
+	int a, b = 4, 10;
+
+	int res= Thread(add, a, b)[Down, 100];
+
+	pout fibo(5, 8);
+
+	return Success;
+}
+
+

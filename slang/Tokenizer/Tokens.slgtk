@@ -1,0 +1,49 @@
+Operators {
+	';' : endcode,
+	'+' : add,
+	'-' : substract,
+	'/' : divide,
+	'*' : multiply,
+	'(__)' : groupCalc,
+	'()' : funcDef,
+	'[THREAD_DEPTH, int64]' : THREAD,
+	'[]' : array,
+	'!!include>##' : import,
+	'!!inclusivy>##' : importAsUserFile,
+	'=>' : funcDef, 
+	'->' : funcBody,
+	'{}' : funcBody,
+	'pout' : displayOutput
+}
+
+// fX can be X= 32bits or 64 bits same as intX
+Literals: (type, size) {
+	intX,
+	fX,
+	string,
+	null,
+	bool,
+	nullptr,
+	Result,
+	THREAD
+}
+
+Identifiers {
+	func: [],
+	class: [],
+	name_vars: []
+}
+
+Keywords {
+	include,
+	inclusivy,
+	pout,
+	THREAD_DEPTH,
+	THREAD,
+	return,
+	not,
+	Result,
+	if,
+	elif,
+	else
+}
